@@ -6,7 +6,7 @@
 
 body {
   margin: 10px;
-  background-color: #000000;
+  background-color: #8cbd49;
 }
 
 .container {
@@ -253,44 +253,5 @@ body {
     padding: 8px 16px;
     font-size: 18px;
 
-  }
-
-  .container .message {
-    width: 100%;
-    position: relative;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  #success-message,
-  #Error-message {
-    font-size: 17px;
-    font-weight: 600;
-    position: absolute;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
-
-  #success-message {
-    color: green;
-    animation-name: zoomIn;
-  }
-
-  #Error-message {
-    color: rgb(237, 6, 6);
-    animation-name: zoomIn;
-  }
-
-  @keyframes zoomIn {
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
   }
 }

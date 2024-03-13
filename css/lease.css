@@ -1,0 +1,815 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 20px;
+  background-color: #8cbd49;
+}
+
+.container {
+  margin: 7% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  /* animation: topZoom 1s forwards; */
+  /* background-image: url(leaseform.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+/* @keyframes topZoom {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+} */
+
+.switch {
+  position: absolute;
+  margin-left: 40%;
+  background-color: #93d931;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  transform: background 2s;
+}
+
+.switch a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.switch:hover {
+  background-color: transparent;
+  border: 3px solid #8cbd49;
+  color: rgb(0, 0, 0);
+  transition: 0.2s ease;
+}
+
+
+
+
+.success-message {
+  position: absolute;
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 10%;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background: #8cbd49;
+  border-radius: 7px;
+  padding: 6px
+}
+
+
+.box {
+  width: 600px;
+  display: flex;
+  margin-top: 3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box h3 {
+  font-size: 2.2rem;
+  margin: 20px;
+  color: white;
+}
+
+.name {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.name i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.name input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.name input::placeholder {
+  color: #898989;
+  font-weight: 500;
+  /* opacity: -10%; */
+}
+
+.date {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.date i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+
+
+.date input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.date input::placeholder {
+  color: #898989;
+  font-weight: 500;
+}
+
+.email {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.email i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.email input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.email input::placeholder {
+  color: #898989;
+  font-weight: 500;
+}
+
+.projectName {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.projectName i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.projectName input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.projectName input::placeholder {
+  color: #898989;
+  font-weight: 500;
+}
+
+
+.mobile {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.mobile i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.mobile input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.mobile input::placeholder {
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.projectCategory {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.projectCategory i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.projectCategory input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.projectCategory input::placeholder {
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+.Capitalforproject {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.Capitalforproject i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.Capitalforproject input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.Capitalforproject input::placeholder {
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.Employee {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.Employee i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.Employee input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.Employee input::placeholder {
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.AreaRequired {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.AreaRequired i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.AreaRequired select {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+
+}
+
+.select-box {
+  appearance: none;
+
+}
+
+
+.AreaRequired select option {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+
+
+}
+
+.selectedColor {
+  color: #898989;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .AreaRequired select {
+    padding: 20px 28px;
+    font-size: 16px;
+  }
+}
+
+
+.RentPeriod {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.RentPeriod i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.RentPeriod input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.RentPeriod input::placeholder {
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.RentTime {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.RentTime i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.RentTime select {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+
+}
+
+.RentTime select option {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+
+}
+
+.MultisideShop {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.MultisideShop i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.MultisideShop select {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+
+}
+
+.MultisideShop select option {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+
+}
+
+.ServiceRequiredByRahina {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.ServiceRequiredByRahina i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.ServiceRequiredByRahina input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.ServiceRequiredByRahina input::placeholder {
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+
+.IsTheProject {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.IsTheProject i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.IsTheProject select {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+
+}
+
+.IsTheProject select option {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+
+}
+
+.ShopNo {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.ShopNo i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.ShopNo select {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+
+}
+
+.ShopNo select option {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+
+}
+
+.Renttype {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.Renttype i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.Renttype select {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+
+}
+
+.Renttype select option {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+
+}
+
+
+
+.ServiceRequiredByRahinaPark {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.ServiceRequiredByRahinaPark i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.ServiceRequiredByRahinaPark input {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+}
+
+.ServiceRequiredByRahinaPark input::placeholder {
+  color: #898989;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+
+.InTheProject {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.InTheProject i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.InTheProject select {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 25px;
+
+}
+
+.InTheProject select .selectedColor {
+  color: #bbb;
+}
+
+.InTheProject select option {
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
+}
+
+
+
+
+.description {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.description i {
+  position: absolute;
+  top: 30px;
+  left: 27px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #000000;
+}
+
+.description textarea {
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #eeeeee;
+  opacity: 79%;
+  border-radius: 40px;
+}
+
+.description textarea::placeholder {
+  color: #bbb;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.button {
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 20px;
+
+}
+
+.button button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background: linear-gradient(to top, #57742f, #b2ee59);
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+    padding: 17px;
+  }
+
+  .success-message {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: rgba(85, 220, 51, 0.808);
+    border-radius: 7px;
+    padding: 6px;
+
+
+  }
+
+  .switch {
+    margin-right: -70px;
+    margin-bottom: 3%;
+  }
+
+  .box h3 {
+    font-size: 9vw;
+    margin-top: 17%;
+  }
+
+  .input-container input {
+    padding: 10px;
+  }
+
+  .button button {
+    padding: 8px 16px;
+    font-size: 18px;
+
+  }
+}
