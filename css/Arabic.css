@@ -2,11 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 body {
   margin: 10px 20px;
-  background-color: #8cbd49;
+
 }
 
 .container {
@@ -18,23 +19,9 @@ body {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  /* animation: topZoom 1s forwards; */
-  /* background-image: url(leaseform.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
+  background-color: white;
+  opacity: 95%;
 }
-
-
-/* @keyframes topZoom {
-  0% {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
 
 .switch {
   position: absolute;
@@ -50,9 +37,8 @@ body {
 
 .switch a {
   text-decoration: none;
-  color: rgb(246, 246, 246);
+  color: rgb(0, 0, 0);
 }
-
 
 .switch:hover {
   background-color: transparent;
@@ -60,8 +46,6 @@ body {
   color: rgb(0, 0, 0);
   transition: 0.2s;
 }
-
-
 
 .success-message {
   position: absolute;
@@ -88,7 +72,8 @@ body {
 .box h3 {
   font-size: 2.2rem;
   margin: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
+
 }
 
 .name {
@@ -97,13 +82,15 @@ body {
   margin-bottom: 15px;
 }
 
+
 .name i {
   position: absolute;
   top: 50%;
-  left: 94%;
+  left: 89%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #000000;
+
 }
 
 .name input {
@@ -775,8 +762,15 @@ body {
 
 @media screen and (max-width: 700px) {
   .container {
-    width: 100%;
+    width: 105%;
     padding: 17px;
+
+  }
+
+  .box h3 {
+    font-size: 8vw;
+    color: black;
+    margin-top: 17%;
   }
 
   .success-message {
@@ -789,14 +783,10 @@ body {
   }
 
   .switch {
-    margin-right: -60px;
+    margin-right: -63px;
     margin-bottom: 3%;
   }
 
-  .box h3 {
-    font-size: 8vw;
-    margin-top: 17%;
-  }
 
   .input-container input {
     padding: 10px;
@@ -808,4 +798,26 @@ body {
 
   }
 
+}
+
+@media screen and (max-width: 700px) {
+
+  .name i,
+  .Email i,
+  .mobile i,
+  .message-box i {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .name i,
+  .Email i,
+  .mobile i,
+  .message-box i {
+    font-size: 17px;
+    left: 88%;
+
+  }
 }

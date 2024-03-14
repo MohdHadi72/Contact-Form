@@ -80,13 +80,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>rihana_park Lease Form</title>
-  <link rel="stylesheet" href="./css/lease.css">
+  <link rel="stylesheet" href="./css//lease.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body style="background-image: url(./image//lease.jpg); background-size: cover;">
   <form method="POST">
-    <div class="container" style="background-image: url(./image/leaseform.jpg);">
+    <div class="container">
       <?php if (isset($success_message)) { ?>
         <div class="success-message"><?php echo $success_message; ?></div>
       <?php } ?>
@@ -196,14 +196,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
   <script>
-    setTimeout(() => {
-      let successMessage = document.querySelector('.success-message');
-      if (successMessage) successMessage.style.display = "none";
+   setTimeout(() => {
+       let successMessage = document.querySelector('.success-message');
+       if (successMessage) {
+         successMessage.style.display = "none";
+         setTimeout(() => {
+           window.location.href = "http://localhost/rihana-park/index.php";
 
-      let box = document.querySelector('.box');
-      if (box) box.style.marginTop = "-3%"
-    }, 2000);
+         }, 1000);
 
+       }
+
+       let box = document.querySelector('.box');
+
+     }, 2000);
 
     window.onload = function() {
       var today = new Date();

@@ -6,9 +6,7 @@
 
 body {
   margin: 10px;
-  background-image: url(/image/lease.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #8cbd49;
 }
 
 .container {
@@ -23,7 +21,6 @@ body {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
-  opacity: 95%;
   animation: topZoom 1s forwards;
 
 }
@@ -41,17 +38,16 @@ body {
 
 .Switch {
   position: absolute;
-  top: 12px;
-  left: 82%;
-
+  top: 20px;
+  left: 80%;
 }
 
-.Switch .Arabic {
+
+.Switch .English {
   background-color: #8cbd49;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-
 }
 
 .Switch a {
@@ -60,13 +56,11 @@ body {
   color: white;
 }
 
-.Arabic:hover {
+.English:hover {
   background-color: transparent;
   border: 3px solid #8cbd49;
   color: black;
 }
-
-
 
 .box {
   width: 600px;
@@ -90,7 +84,7 @@ body {
 .name i {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 94%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #bbb;
@@ -120,7 +114,7 @@ body {
 .Email i {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 94%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #bbb;
@@ -151,7 +145,7 @@ body {
 .mobile i {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 94%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #bbb;
@@ -182,7 +176,7 @@ body {
 .message-box i {
   position: absolute;
   top: 30px;
-  left: 27px;
+  left: 94%;
   transform: translateY(-50%);
   font-size: 20px;
   color: #bbb;
@@ -226,6 +220,15 @@ body {
 
 
 
+.message {
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
 @keyframes buttons {
   0% {
     transform: scale(0.1);
@@ -246,9 +249,10 @@ body {
     padding: 15px;
   }
 
+
   .box h3 {
-    font-size: 30px;
     padding-top: 7%;
+    font-size: 30px;
   }
 
   .input-container input,
@@ -263,7 +267,6 @@ body {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .Switch {
     top: 10px;
@@ -273,5 +276,28 @@ body {
 
   .Switch .English {
     font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .name i,
+  .Email i,
+  .mobile i,
+  .message-box i {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .name i,
+  .Email i,
+  .mobile i,
+  .message-box i {
+    font-size: 18px;
+
+    left: 91%;
+
   }
 }
